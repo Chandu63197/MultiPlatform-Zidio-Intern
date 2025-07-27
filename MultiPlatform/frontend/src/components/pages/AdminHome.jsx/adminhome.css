@@ -1,0 +1,368 @@
+.admin-home-layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9ff;
+}
+
+.calendar-icon {
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+  font-size: 20px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1200; 
+}
+
+.calendar-icon:hover {
+  color: #e2e3ea;
+  transform: scale(1.1);
+}
+
+.calendar-popup {
+  position: absolute;
+  top: 60px; 
+  right: 120px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 1300;
+  padding: 10px;
+}
+
+.react-calendar {
+  border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 280px;
+  max-width: 100%;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  border-radius: 8px;
+  color: #000000;
+  box-shadow: none;
+}
+
+.react-calendar__navigation button {
+  color: #ffffff;
+  font-weight: 400;
+  min-width: 44px;
+  background: none;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.react-calendar__tile--now {
+  background: #5267dc;
+  border-radius: 6px;
+}
+
+.react-calendar__tile--active {
+  background: #2c2a2a;
+  color: white;
+  border-radius: 6px;
+}
+
+.react-calendar__tile:hover {
+  background: #7986cb;
+  color: white;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .calendar-popup {
+    right: 20px;
+    top: 70px;
+    width: 90vw;
+    max-width: 320px;
+  }
+}
+
+.navbar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  padding: 12px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.navbar-right-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 280px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  max-height: 320px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notification-icon{
+  font-size: 19px;
+  margin-right: 13px;
+  margin-top: 5px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInDown 0.25s ease forwards;
+}
+
+.notification-header {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  padding: 12px 16px;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.clear-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.clear-btn:hover {
+  color: #e0f0ff;
+}
+
+.notification-list {
+  overflow-y: auto;
+  max-height: 260px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #333;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-item:hover {
+  background-color: #f0f8ff;
+}
+
+.notification-item.unread {
+  background-color: #e6f0ff;
+  font-weight: 600;
+}
+
+.notif-icon {
+  color: #667eea;
+  font-size: 16px;
+}
+
+.no-notifications {
+  padding: 16px;
+  font-style: italic;
+  color: #888;
+  text-align: center;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -7px;
+  background: #dc3545; 
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 12px;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Profile */
+.user-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 28px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.profile-icon:hover {
+  background-color: #e0e0e0;
+}
+
+.profile-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  min-width: 70px;
+  overflow: hidden;
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+.main-content-wrapper {
+  display: flex;
+  margin-top: 70px; 
+  margin-left: 240px; 
+  flex: 1;
+}
+
+.vertical-nav {
+  width: 240px;
+  position: fixed;
+  top: 110px; 
+  bottom: 0;
+  left: 0;
+  margin-left: 10px;
+  height: 70%;
+  background-color: #5c6bc0;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  z-index: 999;
+}
+
+.vertical-nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.vertical-nav a:hover {
+  background-color: #7986cb;
+}
+
+.active-link {
+  background-color: #3949ab;
+  font-weight: 600;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .admin-home-layout {
+    flex-direction: column;
+  }
+
+  .vertical-nav {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .main-content-wrapper {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .calendar-popup {
+    right: 20px;
+    width: 90%;
+    top: 70px;
+  }
+}

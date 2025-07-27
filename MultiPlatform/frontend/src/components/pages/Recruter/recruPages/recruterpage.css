@@ -1,0 +1,782 @@
+/* Recruterhome */
+.recr-home-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  border-radius: 5px;
+
+}
+
+.profile-icon {
+  background-color: #333;
+  width: 35px;
+}
+
+.profile-icon:hover {
+  background-color: #3a579d;
+}
+
+.dark-toggle {
+  width: 45px;
+}
+
+.dark-toggle:hover {
+  background-color: #3a579d;
+}
+
+.recr-home-navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4b6cb7;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recr-home-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.recr-home-profile-dropdown {
+  cursor: pointer;
+  background-color: #ffffff22;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.recr-home-profile-dropdown:hover {
+  background-color: #3a579d;
+}
+
+.recr-home-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.recr-home-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  margin-top: 13vh;
+  background-color: #4b6cb7;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  padding-top: 2rem;
+}
+
+.recr-home-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recr-home-sidebar li {
+  margin-bottom: -10px;
+  background-color: #4b6cb7;
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.recr-home-sidebar li a {
+  display: block;
+  color: rgb(249, 248, 248);
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.recr-home-sidebar li a:hover {
+  background-color: #3a579d;
+}
+
+.recr-home-content {
+  margin-left: 240px; 
+  padding: 2rem;
+  background-color: #fdfbfb;
+  border-top-left-radius: 16px;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.03);
+}
+
+.recr-home-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.opt{
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 16px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+
+.intro {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.dashboard-summary {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.summary-card {
+  flex: 1;
+  min-width: 200px;
+  background-color: #e6edff;
+  padding: 1.5rem;
+  border-left: 5px solid #4b6cb7;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+/* postJob Css */
+.job-form-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #f0f2f5;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.job-form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #040000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job-form input,
+.job-form textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.job-form input:focus,
+.job-form textarea:focus {
+  border-color: #5d9bdb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(93, 155, 219, 0.5);
+}
+
+.job-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.job-form button {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.job-form button:hover,
+.job-form button:focus {
+  background-color: #4a8cc2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.job-form input::placeholder,
+.job-form textarea::placeholder {
+  color: #a0aec0;
+  font-style: italic;
+}
+
+
+/* Post Internship */
+
+.internship-form-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #f0f2f5;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.internship-form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.internship-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.internship-form input,
+.internship-form textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.internship-form input:focus,
+.internship-form textarea:focus {
+  border-color: #5d9bdb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(93, 155, 219, 0.5);
+}
+
+.internship-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.internship-form button {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+   background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.internship-form button:hover,
+.internship-form button:focus {
+  background-color: #4a8cc2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.internship-form input::placeholder,
+.internship-form textarea::placeholder {
+  color: #a0aec0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .internship-form-container {
+    padding: 20px;
+  }
+
+  .internship-form input,
+  .internship-form textarea,
+  .internship-form button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+
+/* View Application */
+.view-applications-container {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  min-height: 100vh;
+  margin: 60px auto;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+.view-applications-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 900px;
+}
+
+.view-applications-content h2 {
+  font-size: 2rem;
+  color: #182848;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4b6cb7;
+  padding-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+th {
+  background-color: #4b6cb7;
+  color: white;
+}
+
+td {
+  background-color: #f5f7fc;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover td {
+  background-color: #e0eafc;
+}
+
+.applicationbutton {
+  padding: 8px 16px;
+  margin-right: 10px;
+  background-color: #4b6cb7;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.applicationbutton:hover {
+  background-color: #3a579d;
+}
+
+.applicationbutton:focus {
+  outline: none;
+}
+
+.applicationbutton:active {
+  transform: scale(0.98);
+}
+
+.applicationbutton:last-child {
+  background-color: #f44336;
+}
+
+.applicationbutton:last-child:hover {
+  background-color: #d32f2f;
+}
+
+
+/* Interview */
+.schedule-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #f0f2f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.schedule-form label {
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.schedule-form input {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.schedule-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.schedule-form button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.schedule-form button:hover {
+  background-color: #0056b3;
+}
+
+
+/* DashBoard */
+.dashboard-container {
+  padding: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 60px auto;
+  border-radius: 10px;
+  max-width: 1200px;
+}
+
+/* Headings */
+.dashboard-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.dashboard-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.filters select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Statistics Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card:hover {
+  background-color: #f9f9f9;
+}
+
+.stat-icon {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.stat-info h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.stat-info p {
+  margin: 0;
+  color: #888;
+}
+
+/* Charts */
+.charts-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chart-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.half-chart {
+  min-width: 350px;
+}
+
+/* Details Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Button Styles */
+.upbtn,
+.delbtn {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.upbtn {
+  background-color: #3498db;
+  color: white;
+}
+
+.upbtn:hover {
+  background-color: #2980b9;
+}
+
+.delbtn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delbtn:hover {
+  background-color: #c0392b;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal Content */
+.modal-content1 {
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 750px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: fadeInScale 0.3s ease-in-out;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  width: 28px;
+  background: #b59cdc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background: #d68fe6;
+}
+
+/* Edit Form Styling */
+.modal-content1 form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-content1 label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.modal-content1 input,
+.modal-content1 textarea,
+.modal-content1 select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.modal-content1 textarea {
+  min-height: 80px;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #388e3c;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.filters select {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  font-size: 32px;
+}
+
+.stat-info h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.stat-info p {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+.charts-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.chart-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.half-chart {
+  flex: 1 1 45%;
+  min-width: 300px;
+}

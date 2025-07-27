@@ -1,0 +1,184 @@
+.profile-wrapper {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header h2 {
+  margin-bottom: 0.2rem;
+  font-size: 2rem;
+}
+
+.lockbtn{
+  width: fit-content;
+  height: fit-content;
+ margin-left: 78vh;
+ border-radius: 5px;
+}
+.profile-subtitle {
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.profile-section {
+  margin-bottom: 1.5rem;
+}
+
+.profile-section summary {
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.profile-section-content input,
+.profile-section-content textarea {
+  width: 100%;
+  margin-bottom: 0.7rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.profile-section-content button {
+  background: #6f6fd6;
+  color: white;
+  border: none;
+  width: 20%;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.profile-section-content button:hover {
+  background: #7d7dc1;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #f1f1f1;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-btn {
+  background: transparent;
+  color: #d9534f;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  color: #c9302c;
+}
+
+.print-btn-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.print-btn-wrapper button {
+  background: #28a745;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.print-btn-wrapper button:hover {
+  background: #218838;
+}
+.remove-btn {
+  margin-left: 10px;
+  padding: 2px 6px;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #cc0000;
+}
+
+.project-list li,
+.skill-list li,
+.internship-list li,
+.certification-list li,
+.achievement-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 6px 10px;
+  background: #f2f2f2;
+  border-radius: 6px;
+}
+
+.save-btn {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  border: none;
+  width: 20%;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 15px;
+  margin-top: 50px;
+  margin-bottom: 12px;
+  transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #68ab6c;
+}
+
+.viewbtn{
+ 
+  border-radius: 5px;
+}
+
+
+.classgender{
+  width: 85.5vh;
+  height: 45px;
+  border-radius: 5px;
+}
+.downloadbtn{
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.print-btn{
+  width: 20%;
+  background-color: #6f6fd6;
+}
+.print-btn:hover{
+  background-color: #7676c6;
+}
