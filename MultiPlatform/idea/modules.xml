@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Multi-Platform/Multi-Platform/Multi-Platform.iml" filepath="$PROJECT_DIR$/Multi-Platform/Multi-Platform/Multi-Platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Zidio.iml" filepath="$PROJECT_DIR$/.idea/Zidio.iml" />
+    </modules>
+  </component>
+</project>
